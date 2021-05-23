@@ -14,7 +14,7 @@ class TimestampUUID:
         self.output = []
 
     def add(self, key, value):
-        self.output.append({str(key): value})
+        self.output.insert(0, {str(key): value})
 
     def all(self):
         return self.output
